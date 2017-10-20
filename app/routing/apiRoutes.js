@@ -1,3 +1,10 @@
+/* Friend Finder                         */
+/* Author: Wallis Chau                   */ 
+/* Date: 10/16/17                        */
+/* Description: api route setting        */
+/*             Add friend to list        */
+/*             return best match         */
+
 var friendData = require('../data/friends.js');
 
 module.exports = function(app) {

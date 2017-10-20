@@ -1,3 +1,7 @@
+/* Friend Finder                         */
+/* Author: Wallis Chau                   */ 
+/* Date: 10/16/17                        */
+/* Server file                           */
 var express = require('express');
 var bodyParser = require("body-parser");
 

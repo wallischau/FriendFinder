@@ -1,3 +1,9 @@
+/* Friend Finder                         */
+/* Author: Wallis Chau                   */ 
+/* Date: 10/16/17                        */
+/* Description: html route setting       */
+/*             load html files           */
+
 var path = require("path");
 
 module.exports = function(app) {
