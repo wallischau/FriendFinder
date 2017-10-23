@@ -27,24 +27,21 @@ module.exports = function(app) {
 };
 
 function getMatch(data, friendData) {
-	console.log('here');
 	//initial value
 	var leastDiff = [{'index':-1, 'value': 99}];
-	console.log(friendData[0].scores);
-		console.log(data);
 	for (var i in friendData) {
 		var sumOfDiff = 0;
 		for (var j in friendData[i].scores) {
 			sumOfDiff += getSum(friendData[i].scores[j], data.scores[j]);
 		}//for j
-		console.log(i + '-> ' + sumOfDiff);
+		// console.log(i + '-> ' + sumOfDiff);
 		//store the less sumOfDiff
 		if (sumOfDiff < leastDiff[0].value) {
 			leastDiff[0].index = i;
 			leastDiff[0].value = sumOfDiff;
 		} 
 	}//for i
-	console.log(leastDiff);
+	// console.log(leastDiff);
 	return leastDiff;
 }//getMatch
 
